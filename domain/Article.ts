@@ -3,16 +3,18 @@ export type QiitaResponse = {
   title: string;
   url: string;
   image: string;
-};
+}
 
-type MicrocmsContent = {
+export type MicrocmsContent = {
   id: string;
   title: string;
   eyecatch: {
     url: string;
   };
+  content: string;
 };
+
 
 export type MicrocmsResponse = {
   contents: MicrocmsContent[];
-};
+}
